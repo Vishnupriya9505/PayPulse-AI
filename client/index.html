@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayPulse AI - Smart Financial Assistant</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-grid.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ag-grid-community/styles/ag-theme-alpine.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>PayPulse AI 💡</h1>
+    <p>AI-driven Subscription Audit & Instant PayPal Optimization</p>
+
+    <h3>Your Active Subscriptions (AG Grid)</h3>
+    <div id="gridContainer" class="ag-theme-alpine"></div>
+
+    <button class="btn" onclick="runAiAudit()">Run AI Audit & Savings Analysis</button>
+
+    <div class="card" id="aiOutput" style="display:none; margin-top: 20px;">
+      <h3>AI Savings Audit</h3>
+      <div id="aiInsights">Analyzing...</div>
+    </div>
+
+    <div style="margin-top: 30px;">
+      <h3>Upgrade / Consolidate with PayPal</h3>
+      <div id="paypal-button-container"></div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=BAARj1IzyoibrDiH9l0qvfBjXJT_U5z3kMdk832ckjIe-Zmc6v-zWp-TTJ7WEugWpoc9kDOZxoJT5tUSNU&currency=USD"></script>
+<script src="app.js"></script>
+</body>
+</html>
